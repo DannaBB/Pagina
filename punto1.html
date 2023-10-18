@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>punto 1</title>
+  </head>
+  <body>
+    <h1>Punto 1 </h1>
+    <p>Todos los valores a ingresar deben ser numericos </p>
+    <script type="text/javascript">
+    var o = 0;
+    var a = 0;
+    var p = 0;
+    var r = 0;
+    var o = prompt("Seleccione la figura para calcular el area y el perimetro de la figura a seleccionar 1.Trianguro 2.Rectangulo 3.Cuadrado 4.Circulo");
+    if(o == 1){
+      var a1 = prompt("Ingrese el valor de alguno de los lados del triangulo");
+      var b = prompt("Ingrese el valor de la base del triangulo");
+      var c = prompt("Ingrese el valor de alguno de los lados del triangulo");
+      var h = prompt("Ingrese el valor de la hipotenusa del triangulo");
+      a = b+h/2;
+      p = a1+b+c;
+      document.write("El area del Triangulo es:  " +a+ " el perimetro es: "+ p+"<br>");
+    }else if (o == 2) {
+      var b1 = prompt("Ingrese el valor de la base del Rectangulo");
+      var a2 = prompt("Ingrese el valor del lado del Rectangulo");
+      a = b1*a2;
+      p = 2*(b1+a2);
+      document.write("El area del Rectangulo es: " +a+ " el perimetro es: "+ p+"<br>");
+    }else if (o ==3 ){
+      var a3 = prompt("ingrese la medida del lado del Cuadrado :");
+      a = Math.pow(a3,2);
+      p = 4*a3;
+      document.write("El area del circulo es: " +a+ " el perimetro es: "+ p+"<br>");
+    }else if (o == 4) {
+      r = prompt("ingrese la medida de radio :");
+      a = 2*3.1416* Math.pow(r,2);
+      p = 3.1416 *Math.pow(r,2);
+      document.write("El area del circulo es: " +a+ " el perimetro es: "+ p+"<br>");
+    }else {
+      document.write("El dato Ingresado no es valido por favor ejecute nuevamente y ingrese un valor valido");
+    }
+    </script>
+  </body>
+</html>
